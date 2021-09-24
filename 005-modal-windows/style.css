@@ -1,0 +1,37 @@
+h1 {
+  color: teal;
+}
+
+.modal__btn {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid teal;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: teal;
+  font-weight: 800;
+}
+
+.modal__fade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__window {
+  background-color: rgb(0, 202, 202);
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}

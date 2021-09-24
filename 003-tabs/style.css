@@ -1,0 +1,50 @@
+h1 {
+  color: teal;
+}
+
+h2 {
+  margin: 0;
+}
+
+.tabs__btns,
+.tabs__info {
+  list-style: none;
+  padding: 0;
+}
+
+.tabs__btns {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs__btns-item {
+  margin: 0 20px;
+}
+
+.tabs__btn {
+  cursor: pointer;
+  padding: 15px;
+  border: 2px solid teal;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: teal;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs__info {
+  background-color: rgb(0, 202, 202);
+  color: white;
+  padding: 20px;
+  font-weight: 700;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.tabs__info-item {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

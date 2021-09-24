@@ -1,0 +1,38 @@
+h1 {
+  color: teal;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 15px;
+  border: 2px solid teal;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: teal;
+  font-weight: 800;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  width: 200px;
+}
+
+.btn:hover {
+  background-color: teal;
+  color: white;
+}
+
+.text {
+  border: 2px solid teal;
+  color: teal;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(0);
+}
+
+.text--hidden {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+}

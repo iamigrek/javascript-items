@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabs</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<h1>Tabs</h1>
+
+	<ul class="tabs__btns">
+		<li class="tabs__btns-item">
+			<button data-tab="tab-1" class="tabs__btn">tab 1</button>
+		</li>
+		<li class="tabs__btns-item">
+			<button data-tab="tab-2" class="tabs__btn">tab 2</button>
+		</li>
+		<li class="tabs__btns-item">
+			<button data-tab="tab-3" class="tabs__btn">tab 3</button>
+		</li>
+	</ul>
+
+	<ul class="tabs__info">
+		<li data-tab-content id='tab-1' class="tabs__info-item">
+			<h2>Tab 1</h2>
+			<p class="tabs__text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque dolorem vel ducimus autem provident
+				quaerat minus omnis dolores, odio quam a praesentium cumque ut doloremque magnam voluptatibus. Eveniet, ullam.
+			</p>
+		</li>
+		<li data-tab-content id='tab-2' class="hidden tabs__info-item">
+			<h2>Tab 2</h2>
+			<p class="tabs__text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque dolorem vel ducimus autem provident
+				quaerat minus omnis dolores, odio quam a praesentium cumque ut doloremque magnam voluptatibus. Eveniet, ullam.
+			</p>
+		</li>
+		<li data-tab-content id='tab-3' class="hidden tabs__info-item">
+			<h2>Tab 3</h2>
+			<p class="tabs__text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque dolorem vel ducimus autem provident
+				quaerat minus omnis dolores, odio quam a praesentium cumque ut doloremque magnam voluptatibus. Eveniet, ullam.
+			</p>
+		</li>
+
+	</ul>
+
+
+	<script src="./main.js"></script>
+</body>
+
+</html>
