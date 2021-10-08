@@ -1,18 +1,16 @@
 let accordion = document.querySelector('.accordion');
-let accordionBtn = accordion.querySelectorAll('.accordion__btn');
-let accordionInfo = accordion.querySelectorAll('.accordion__info');
+let items = accordion.querySelectorAll('.accordion__item');
+let btns = accordion.querySelectorAll('.accordion__btn');
 
-accordionBtn.forEach(accordionBtn =>
-  accordionBtn.addEventListener('click', toggleAccordion)
+btns.forEach(item =>
+  item.addEventListener('click', function () {
+    thisItem = this.parentNode;
+    items.forEach(item => {
+      if (thisItem == item) {
+        thisItem.classList.toggle('open');
+        return;
+      }
+      item.classList.remove('open');
+    });
+  })
 );
-
-function toggleAccordion() {
-  thisItem = this.nextElementSibling;
-  accordionInfo.forEach(item => {
-    if (thisItem == item) {
-      thisItem.classList.toggle('open');
-      return;
-    }
-    item.classList.remove('open');
-  });
-}
